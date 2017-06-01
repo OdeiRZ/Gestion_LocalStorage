@@ -5,7 +5,7 @@ Aplicación demo para la gestión de datos de aplicaciones web en local desarrol
 Permite gestionar datos almacenados localmente mediante el propio navegador, todo ello de una manera más 
 eficiente que usando cookies.
 
-Desde el programa podremos elegir entre diferentes opciones, desde las que podremos gestionar las funciones 
+Desde el programa podremos elegir entre diferentes opciones, desde las que gestionaremos las funciones 
 propias de la aplicación. La demo permite grabar datos, leerlos individual y colectivamente, listarlos de igual
 manera, y borrarlos de la misma forma, posibilitando así todas las tareas de un mantenimiento básico de datos 
 de manera local y satisfactoria.
