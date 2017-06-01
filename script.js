@@ -61,3 +61,8 @@ function borrarItem(user) {
         alert("Rellena el Nombre para borrar sus datos");
     }
 }
+
+function borrarTodo() {
+    localStorage.clear();
+    alert("Eliminados todos los datos");
+}
