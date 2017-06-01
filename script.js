@@ -33,3 +33,15 @@ function leerItem(user) {
 		alert("Rellena el nombre para buscar sus datos");
 	}
 }
+
+function leerTodo() {
+    if (localStorage.length != 0) {
+		var datos = "";
+        for (var i=0; i<localStorage.length; i++) {
+			datos += localStorage.key(i) + " -> " + localStorage.getItem(localStorage.key(i)) + "\n";
+        }
+		alert(datos);
+    } else {
+        alert("No hay datos guardados");
+    }
+}
