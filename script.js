@@ -17,3 +17,19 @@ function grabarItem(user, categoria) {
         alert("Rellena el nombre y selecciona la categoría para almacenarlo");
     }
 }
+
+function leerItem(user) {
+	var sw = false, i;
+	if (user.value.length != 0) {
+		for (i=0; i<localStorage.length; i++) {
+			if (localStorage.key(i) == user.value) {
+				alert(user.value + " -> " + localStorage.getItem(localStorage.key(i)));
+				sw = true;
+				break;
+			}
+	    }
+        (!sw) ? alert("No se encontro el nombre") : "";
+	} else {
+		alert("Rellena el nombre para buscar sus datos");
+	}
+}
