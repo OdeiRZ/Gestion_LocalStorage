@@ -1,27 +1,30 @@
-Gestión LocalStorage 0.96
-================================
+# Gestión LocalStorage
 
-Aplicación demo para la gestión de datos de aplicaciones web en local desarrollada en JavaScript y HTML.
-Permite gestionar datos almacenados localmente mediante el propio navegador, todo ello de una manera más 
-eficiente que usando cookies.
+Demo en JavaScript y HTML que muestra el uso básico de la API `localStorage` del navegador para persistir datos clave-valor.
 
-Desde el programa podremos elegir entre diferentes opciones, desde las que gestionaremos las funciones 
-propias de la aplicación. La demo permite grabar datos, leerlos individual y colectivamente, listarlos de igual
-manera, y borrarlos de la misma forma, posibilitando así todas las tareas de un mantenimiento básico de datos 
-de manera local y satisfactoria.
+## Características
 
-Para cualquier referencia relacionada con el sitio, podemos ver la demo desplegada 
-visitando el siguiente [enlace].
+- Guardar un dato asociando un nombre de usuario a una categoría (Administrador, Editor o Usuario) mediante `localStorage.setItem`.
+- Leer el valor asociado a un nombre concreto.
+- Listar todos los pares clave-valor almacenados actualmente en `localStorage`.
+- Borrar el dato asociado a un nombre concreto (`localStorage.removeItem`).
+- Vaciar por completo el almacenamiento local (`localStorage.clear`).
+- Mensajes de aviso (`alert`) para validar que los campos requeridos estén rellenos antes de operar.
 
-## Requisitos
-- Navegador Web [Chrome], [Firefox], [Opera], [Microsoft Edge], etc..
+## Tecnologías
+
+- HTML5
+- JavaScript vanilla (API `localStorage`, sin frameworks ni dependencias externas)
+
+## Instalación / Cómo ejecutarlo
+
+No requiere instalación ni servidor:
+
+1. Clona el repositorio.
+2. Abre `public/index.html` directamente en un navegador (Chrome, Firefox, Edge, etc.).
+
+Ejercicio académico que practica el uso de la API `localStorage` para almacenar datos en el navegador de forma persistente, sin depender de cookies ni de un servidor.
 
 ## Licencia
-Esta aplicación se ofrece bajo licencia [GPL versión 3].
 
-[enlace]: https://odeirz.github.io/Gestion_LocalStorage/public/
-[Chrome]: https://www.google.es/chrome/browser/desktop/index.html
-[Firefox]: https://www.mozilla.org/es-ES/firefox/new/
-[Opera]: http://www.opera.com/es
-[Microsoft Edge]: https://www.microsoft.com/es-es/windows/microsoft-edge
-[GPL versión 3]: https://www.gnu.org/licenses/gpl-3.0.en.html
+GPL versión 3 (ver archivo [LICENSE](LICENSE)).
